@@ -36,9 +36,9 @@ $f3->route('GET /', function() {
 });
 
 // Define another route
-$f3->route('GET /survey', function() {
+$f3->route('GET /survey', function($f3) {
 
-
+    $f3->set('choices', getChoices());
     // Display a view
     $view = new Template();
     echo $view->render("views/survey.html");

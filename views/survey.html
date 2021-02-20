@@ -5,6 +5,29 @@
     <title>Survey</title>
 </head>
 <body>
-<p></p>
+<h1>Midterm Survey</h1>
+
+<form action="summary" method="post">
+    <!-- Pet Name Input -->
+    <div class="form-group">
+        <label for="name">
+            Name
+            <input class="form-control" type="text" name="name" id="name">
+        </label>
+    </div>
+
+    <p>Check all that apply:</p>
+    <repeat group="{{ @choices }}" value="{{ @item }}">
+        <input type="checkbox" id="{{ @item }}" name="choices[]" value="{{ @item }}">
+        <label for="{{ @item }}"> {{ @item }}</label>
+        <br>
+    </repeat>
+    <br>
+
+    <div>
+        <input class="" type="submit" value="Submit">
+    </div>
+
+</form>
 </body>
 </html>
