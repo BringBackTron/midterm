@@ -1,0 +1,13 @@
+{
+  "name": "MIDTERM",
+  "authors": [
+    {
+      "name": "George Mcmullen",
+      "email": "gmcmullen@mail.greenriver.edu"
+    }
+
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
